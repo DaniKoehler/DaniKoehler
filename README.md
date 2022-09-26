@@ -1,10 +1,44 @@
-- 👋 Hi, I’m @DaniKoehler
-- 👀 I’m interested in learn Web Dev
-- 🌱 I’m currently learning Web Development
-- 💞️ I’m looking to collaborate on me
-- 📫 How to reach me Web Back-End
+```php
+<?php
 
-<!---
-DaniKoehler/DaniKoehler is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+namespace DaniKoehler;
+
+class About extends Me {
+
+    public function getWorkplace(): array {
+
+        return [
+            'workplace' => [
+                'local' => 'Home Sweet Home',
+                'position' => 'Backend Web Dev'
+            ]
+        ];
+    }
+
+    public function getKnowledge(): array {
+
+        return [
+            Php::class,
+            Laravel::class,
+            Javascript::class,
+            Html::class,
+            Css::class,
+        ];
+    }
+
+    public function getFutureGoals(): array {
+
+        return [
+            'personal' => [
+                'study' => 'book at least 2 hours a day',
+                'games' => 'dont give up games before the end',
+            ],
+
+            'professional' => [
+                'git' => 'keep my portfolios always up to date',
+                'me' => 'continue evolving my knowledge'
+            ]
+        ];
+    } 
+}
+```
