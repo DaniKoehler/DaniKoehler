@@ -21,8 +21,15 @@ class About extends Me {
             Php::class,
             Laravel::class,
             Javascript::class,
+            SpringBoot::class,
             Html::class,
             Css::class,
+            Docker::class,
+            MySQL::class,
+            Oracle::class,
+            MongoDB::class,
+            PHPUnit::class,
+            RestAPI::class
         ];
     }
 
@@ -39,6 +46,16 @@ class About extends Me {
                 'me' => 'continue evolving my knowledge'
             ]
         ];
-    } 
+    }
+    
+    public function getHowToReachMe(): array {
+    
+        return [
+            'contact' => [
+                'gmail' => 'ntckoehler@gmail.com',
+                'linkedin' => 'https://www.linkedin.com/in/danikoehler/'
+            ]
+        ];
+    }
 }
 ```
