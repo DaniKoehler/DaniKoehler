@@ -3,25 +3,32 @@
 
 namespace DaniKoehler;
 
-class About extends Me {
-
-    public function getWorkplace(): array {
-
+class About extends Me
+{
+    /**
+     * @return Array
+     */
+    public function getWorkplace(): Array
+    {
         return [
-            'workplace' => [
-                'local' => 'Home Sweet Home',
-                'position' => 'Backend Web Dev'
+            'workplace'    => [
+                'local'    => 'Home Sweet Home',
+                'position' => 'FullStack Web Developer'
             ]
         ];
     }
 
-    public function getKnowledge(): array {
-
+    /**
+     * Knowledge I'm improving every day
+     * @return Array
+     */
+    public function getKnowledge(): Array
+    {
         return [
             Php::class,
             Laravel::class,
             Javascript::class,
-            SpringBoot::class,
+            JQuery::class,
             Html::class,
             Css::class,
             Docker::class,
@@ -32,27 +39,32 @@ class About extends Me {
             RestAPI::class
         ];
     }
-
-    public function getFutureGoals(): array {
-
+    
+    /**
+     * @return Array
+     */
+    public function getFutureGoals(): Array
+    {
         return [
-            'personal' => [
-                'study' => 'book at least 2 hours a day',
-                'games' => 'dont give up games before the end',
+            'personal'  => [
+                'study' => 'Book at least 2 hours a day.',
+                'games' => 'Don't give up games before the end.',
             ],
 
             'professional' => [
-                'git' => 'keep my portfolios always up to date',
-                'me' => 'continue evolving my knowledge'
+                'company'  => 'Start my own company.'
             ]
         ];
     }
     
-    public function getHowToReachMe(): array {
-    
+    /**
+     * @return Array
+     */
+    public function getHowToReachMe(): Array
+    {
         return [
-            'contact' => [
-                'gmail' => 'ntckoehler@gmail.com',
+            'contact'      => [
+                'gmail'    => 'ntckoehler@gmail.com',
                 'linkedin' => 'https://www.linkedin.com/in/danikoehler/'
             ]
         ];
